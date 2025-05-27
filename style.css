@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+}
+
+    .navbar {
+      background: #23272b !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #ffc107 !important;
+    }
+
+    .dropdown-menu {
+      background-color: #23272b;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #fff;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #495057;
+    }
+
+/* Employee */
+    .employee-form {
+      padding: 60px 0;
+    }
+
+    .employee-form .container {
+      max-width: 500px;
+    }
+
+    .employee-form .card {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+      background: #fff;
+      padding: 32px 28px 24px 28px;
+    }
+
+    .employee-form h2 {
+      font-weight: 700;
+      color: #198754;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 2rem;
+    }
+
+    .employee-form .form-label {
+      font-weight: 600;
+      color: #495057;
+      margin-bottom: 6px;
+    }
+
+    .employee-form input {
+      height: 48px;
+      border-radius: 10px;
+      border: 1.5px solid #ced4da;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      font-size: 1.05rem;
+    }
+
+    .employee-form input:focus {
+      border-color: #198754;
+      box-shadow: 0 0 0 0.18rem rgba(25, 135, 84, 0.18);
+      background: #f6fff9;
+    }
+
+    .employee-form button {
+      width: 100%;
+      padding: 13px;
+      font-weight: bold;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, #198754 60%, #43cea2 100%);
+      border: none;
+      color: #fff;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(25, 135, 84, 0.08);
+    }
+
+    .employee-form button:hover {
+      background: linear-gradient(90deg, #157347 60%, #185a9d 100%);
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    .employee-form .alert {
+      margin-top: 18px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .employee-form .container {
+        padding: 0 8px;
+      }
+
+      .employee-form .card {
+        padding: 18px 8px 16px 8px;
+      }
+    }
+
+/* View_Employee */
+    .view-employee {
+            padding: 60px 0;
+        }
+
+        .view-employee .container {
+            max-width: 900px;
+        }
+
+        .employee-card {
+            border: none;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+            background: #fff;
+            padding: 32px 28px 24px 28px;
+        }
+
+        .employee-card h2 {
+            font-weight: 700;
+            color: #198754;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 2rem;
+        }
+
+        .table thead {
+            background: linear-gradient(90deg, #198754 60%, #43cea2 100%);
+            color: #fff;
+        }
+
+        .table-striped>tbody>tr:nth-of-type(odd) {
+            background-color: #f6fff9;
+        }
+
+        .table-bordered {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .btn-action {
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: 0.95rem;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .employee-card {
+                padding: 18px 8px 16px 8px;
+            }
+
+            .view-employee .container {
+                padding: 0 8px;
+            }
+        }
+
+/* Product-Form */
+    .form {
+      padding: 60px 0;
+    }
+
+    .form .container {
+      max-width: 500px;
+    }
+
+    .form .card {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+      background: #fff;
+      padding: 32px 28px 24px 28px;
+    }
+
+    .form h2 {
+      font-weight: 700;
+      color: #198754;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 2rem;
+    }
+
+    .form .form-label {
+      font-weight: 600;
+      color: #495057;
+      margin-bottom: 6px;
+    }
+
+    .form input {
+      height: 48px;
+      border-radius: 10px;
+      border: 1.5px solid #ced4da;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      font-size: 1.05rem;
+    }
+
+    .form input:focus {
+      border-color: #198754;
+      box-shadow: 0 0 0 0.18rem rgba(25, 135, 84, 0.18);
+      background: #f6fff9;
+    }
+
+    .form button {
+      width: 100%;
+      padding: 13px;
+      font-weight: bold;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, #198754 60%, #43cea2 100%);
+      border: none;
+      color: #fff;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(25, 135, 84, 0.08);
+    }
+
+    .form button:hover {
+      background: linear-gradient(90deg, #157347 60%, #185a9d 100%);
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    .form .alert {
+      margin-top: 18px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .form .container {
+        padding: 0 8px;
+      }
+
+      .form .card {
+        padding: 18px 8px 16px 8px;
+      }
+    }
+
+/* View_Product */
+
+        .products-section {
+            padding: 60px 0 30px 0;
+        }
+
+        .products-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .products h2 {
+            font-weight: 700;
+            color: #198754;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 2rem;
+            margin:1.2rem 0;
+        }
+
+        .products .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px 0;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 18px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+            border: none;
+        }
+
+        .card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 12px 32px rgba(25, 135, 84, 0.15);
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+            border-bottom: none;
+            border-radius: 18px 18px 0 0;
+            padding: 0;
+        }
+
+        .card-title {
+            color: #198754;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #198754 60%, #43cea2 100%);
+            border: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #157347 60%, #185a9d 100%);
+        }
+
+        .fade-out {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.3s, transform 0.3s;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .products .row {
+                gap: 0;
+            }
+
+            .products-section {
+                padding: 30px 0 10px 0;
+            }
+        }
