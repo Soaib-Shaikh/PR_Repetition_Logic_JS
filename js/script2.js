@@ -33,23 +33,18 @@ const handleDelete=(id)=>{
 }
 
 const handleEdit=(id)=>{
-    let emp = employees[id];
-
-    let empname = prompt("Edit Employee Name: ", emp.empname);
-    if(empname === null) return;
-
-    let salary = prompt("Edit Employee Salary: ", emp.salary);
-    if(salary === null) return;
-
-    let post = prompt("Edit Employee Post: ", emp.post);
-    if(post === null) return;
-
-    let manager = prompt("Edit Employee Manager: ", emp.manager);
-    if(manager === null) return;
-
-    employees[id] = {empname, salary, post, manager};
+    let emp = employees.find((emp)=>emp.id === id);
+    let empName = prompt('Enter new employee name');
+    let empSalary = prompt('Enter new employee salary');
+    let empPost = prompt('Enter new employee post');
+    let empManager = prompt('Enter new employee manager');
+    emp.ename = empName;
+    emp.salary = empSalary;
+    emp.post = empPost;
+    emp.manager = empManager;
     localStorage.setItem('employees',JSON.stringify(employees));
     getData();
+
 }
 
 getData();
