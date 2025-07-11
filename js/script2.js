@@ -13,20 +13,14 @@ let getData = ()=>{
             <td>${salary}</td>
             <td>${post}</td>
             <td>${manager}</td>
-            <td>
+            <td class="d-flex justify-content-between gap-3">
                 <button onclick="handleDelete(${id})" class="btn btn-danger">Delete</button>
+                <button onclick="handleEdit(${id})" class="btn btn-warning">Edit</button>
             </td>
         `
         empTable.appendChild(row);
     })
 };
-
-
-// const handleDelete=(index)=>{
-//     employees.splice(index,1);
-//     localStorage.setItem('employees',JSON.stringify(employees));
-//     getData();
-// }
 
 const handleDelete=(id)=>{
    
@@ -38,5 +32,24 @@ const handleDelete=(id)=>{
     getData();
 }
 
+const handleEdit=(id)=>{
+    let emp = employees[id];
+
+    let empname = prompt("Edit Employee Name: ", emp.empname);
+    if(empname === null) return;
+
+    let salary = prompt("Edit Employee Salary: ", emp.salary);
+    if(salary === null) return;
+
+    let post = prompt("Edit Employee Post: ", emp.post);
+    if(post === null) return;
+
+    let manager = prompt("Edit Employee Manager: ", emp.manager);
+    if(manager === null) return;
+
+    employees[id] = {empname, salary, post, manager};
+    localStorage.setItem('employees',JSON.stringify(employees));
+    getData();
+}
 
 getData();
